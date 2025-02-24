@@ -334,7 +334,7 @@ ul li {
 }
 
 .popup {
-  display: block;
+  display: none;
    bottom: -460%;
    left: 40%;
    transform: translateX(-50%);
