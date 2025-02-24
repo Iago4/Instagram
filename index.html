@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,6 +24,7 @@
           <div class="image">
             <a href="#">
               <img
+                id="logoo"
                 class="logoName"
                 src="./.assets/Instagram_logo.svg.png"
                 alt="instagram"
@@ -33,7 +34,7 @@
 
           <ul class="ulLeft">
             <div class="position">
-              <ion-icon name="home-outline"></ion-icon>
+              <ion-icon name="home"></ion-icon>
               <li>Página inicial</li>
             </div>
 
@@ -76,9 +77,9 @@
 
         <div class="listBotton">
           <ul>
-            <div class="position">
-              <ion-icon name="at-outline"></ion-icon>
-              <li>Threads</li>
+            <div class="position" onclick="toggleMode()">
+              <ion-icon id="switch" name="sunny-outline"></ion-icon>
+              <li>Light</li>
             </div>
 
             <div class="position">
@@ -165,10 +166,8 @@
 
                 <p class="date">• 10 h</p>
                 <div class="optionsPost">
-                <ion-icon
-                  name="ellipsis-horizontal"
-                ></ion-icon>
-              </div>
+                  <ion-icon name="ellipsis-horizontal"></ion-icon>
+                </div>
               </div>
 
               <div class="contents">
@@ -212,10 +211,8 @@
 
                 <p class="date">• 1 min</p>
                 <div class="optionsPost">
-                <ion-icon
-                  name="ellipsis-horizontal"
-                ></ion-icon>
-              </div>
+                  <ion-icon name="ellipsis-horizontal"></ion-icon>
+                </div>
               </div>
 
               <div class="contents">
@@ -268,11 +265,42 @@
           </div>
 
           <div class="prof">
+            <div class="popup">
+              <div class="popProfile">
+                <img src="./.assets/profiles/Big Rush-modified.png" alt="rush">
+                <div class="user">
+              <p class="nick">ogbigrush</p>
+              <p class="name">roushinol</p>
+            </div>
+              </div>
+              <div class="popDetails">
+                <p>107 publicações</p>
+                <p>161 mil seguidores</p>
+                <p>401 seguindo</p>
+              </div>
+              <div class="popImages">
+                <div class="centerImg">
+                <img src="./.assets/profiles/big rush/big1.jpg" alt="bigrush">
+              </div>
+
+              <div class="centerImg">
+                <img src="./.assets/profiles/big rush/big2.jpg" alt="bigrush">
+              </div>
+
+              <div class="centerImg">
+                <img src="./.assets/profiles/big rush/big3.jpg" alt="bigrush">
+              </div>
+              </div>
+              <div class="follow">
+                <button><ion-icon name="person-add-outline"></ion-icon> Seguir</button>
+              </div>
+            </div>
             <img src="./.assets/profiles/Big Rush-modified.png" alt="Rush" />
             <div class="user">
               <p class="nick">ogbigrush</p>
               <p class="name">roushinol</p>
             </div>
+            
             <p class="change">Seguir</p>
           </div>
 
@@ -334,5 +362,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="./Script.js"></script>
   </body>
 </html>
